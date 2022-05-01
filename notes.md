@@ -10,3 +10,8 @@ if you want to prevent object rendering fighting (exact posiition of text mesh p
 extra settings Distance Overlay
 
 112 coordinate system
+ExecuteAlways flag
+https://docs.unity3d.com/ScriptReference/ExecuteAlways.html
+- we would like to update text labels based on position of tile in the world coordinate system
+awake()
+https://docs.unity3d.com/Manual/ExecutionOrder.html
