@@ -15,3 +15,11 @@ https://docs.unity3d.com/ScriptReference/ExecuteAlways.html
 - we would like to update text labels based on position of tile in the world coordinate system
 awake()
 https://docs.unity3d.com/Manual/ExecutionOrder.html
+
+
+113 list
+moving enemy inside world
+empty object enemy
+
+new script attached to Tile asset - Waypoint.cs
+news script ettached to the enemy - EnemyMover.cs
