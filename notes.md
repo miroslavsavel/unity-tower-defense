@@ -23,3 +23,24 @@ empty object enemy
 
 new script attached to Tile asset - Waypoint.cs
 news script ettached to the enemy - EnemyMover.cs
+
+
+# 114 Coroutines - enemy moving following the hardcoded path
+we would like to delay code to print debu and no instantly teleport to the target location
+(seen in project boost section - InvokeRepeating) ???
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html
+
+coroutines???
+- works slightly different 
+StartCoroutine()
+yield
+IEnumerator?? return from method
+8:00 running of coroutine, they seems to run in paralel
+
+Ex - move object throught waypoints
+https://medium.com/eincode/unity-fundamentals-moving-a-game-object-179f708c5d36#:~:text=Change%20position%20in%20the%20code,transform%20property%20of%20the%20object.&text=%2C1%2C1)-,transform.,Simple%20as%20that!
+https://answers.unity.com/questions/1470684/how-to-change-position-of-gameobject.html
+https://docs.unity3d.com/ScriptReference/GameObject.Find.html
+
+
+# 115 importing assets
