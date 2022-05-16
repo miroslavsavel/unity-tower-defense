@@ -2,8 +2,10 @@
 scene navigation
 https://docs.unity3d.com/Manual/SceneViewNavigation.html
 ALT - orbit
-
+sipky + shift je posun
+F - focus on object
 edit - grid and snapping - here we set up world grid 
+ou can align your scene view camera to your game camera: Select your game camera object in the hierarchy, and use GameObject > Align View To Selected from the Unity Editor Menu.
 
 111 text labels
 if you want to prevent object rendering fighting (exact posiition of text mesh pro object and cube) -> text mesh pro
@@ -42,5 +44,21 @@ https://medium.com/eincode/unity-fundamentals-moving-a-game-object-179f708c5d36#
 https://answers.unity.com/questions/1470684/how-to-change-position-of-gameobject.html
 https://docs.unity3d.com/ScriptReference/GameObject.Find.html
 
+https://answers.unity.com/questions/1710721/how-do-i-move-an-object-to-the-position-of-another.html
+
+coroutines
+https://gamedevbeginner.com/coroutines-in-unity-when-and-how-to-use-them/
+https://medium.com/@kunaltandon.kt/coroutines-in-unity-6e8a12279364
+
 
 # 115 importing assets
+assts/import package/ custom package
+
+
+replace tiles with the grass tiles
+open our tiles prefab and delete cube and drag and drop grass prefab
+we have created nested prefab
+but we need some variance
+right click on grass prefab and choose unpack
+
+# 116 prefab variance
