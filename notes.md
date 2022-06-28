@@ -62,3 +62,10 @@ but we need some variance
 right click on grass prefab and choose unpack
 
 # 116 prefab variance
+creating path 
+click tile create, prefab variant 
+it is the child of prefab
+for rotating Tile_RoadStraigh create another prefab variant from Tile_RoadStraight variant
+
+!!nested prefab - overiding
+8:50 task - create three differenet prefab variants from Tile_RoadCorner

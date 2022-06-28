@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-[ExecuteAlways]
+[ExecuteAlways]     //execute also in edit mode and also in play mode
 public class CoordinateLabeler : MonoBehaviour
 {
     TextMeshPro label;
