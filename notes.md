@@ -69,3 +69,6 @@ for rotating Tile_RoadStraigh create another prefab variant from Tile_RoadStraig
 
 !!nested prefab - overiding
 8:50 task - create three differenet prefab variants from Tile_RoadCorner
+
+# 117 smooth enemy movement
+delete cylinder enemy
