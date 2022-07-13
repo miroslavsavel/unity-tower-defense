@@ -6,7 +6,7 @@ public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<Waypoint> path = new List<Waypoint>();    //waypoints that create our path
     //public GameObject Enemy; //dont need to import it, because this script is attached to the enemy object
-    [SerializeField] float waitTime = 1f;
+    [SerializeField] [Range(0f, 5f)] float speed = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,7 @@ public class EnemyMover : MonoBehaviour
 
             while(travelPercent < 1f)
             {
-                travelPercent += Time.deltaTime;
+                travelPercent += Time.deltaTime * speed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 //we are going to yield back to the update function until the end of the frame has been completed
                 //and the we will jump back to our coroutine which will continue our while loop and go through our lines

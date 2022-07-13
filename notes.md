@@ -83,3 +83,7 @@ Vector3.LERP(startPosition, endPosition, travelPercent)
 EnemyMover.cs
 https://www.youtube.com/watch?v=HRXkeaeImGs
 https://www.youtube.com/watch?v=T4yAcPKyRmo
+
+set the direction by LookAt function
+
+#118
