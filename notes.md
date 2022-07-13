@@ -81,3 +81,5 @@ Linear interpolation (LERP) for smooth movement
 Vector3.LERP(startPosition, endPosition, travelPercent)
 3:53
 EnemyMover.cs
+https://www.youtube.com/watch?v=HRXkeaeImGs
+https://www.youtube.com/watch?v=T4yAcPKyRmo

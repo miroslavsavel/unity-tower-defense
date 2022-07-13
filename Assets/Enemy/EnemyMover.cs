@@ -30,6 +30,9 @@ public class EnemyMover : MonoBehaviour
             //transform.position = waypoint.transform.position;
             //yield return new WaitForSeconds(waitTime);      //we want delay, yield mean give up control and come back after 1second
 
+            //point the enemy towards the right way of movement
+            transform.LookAt(endPosition);
+
             while(travelPercent < 1f)
             {
                 travelPercent += Time.deltaTime;
