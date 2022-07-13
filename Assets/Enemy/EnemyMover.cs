@@ -23,9 +23,22 @@ public class EnemyMover : MonoBehaviour
          * */
         foreach(Waypoint waypoint in path)
         {
+            Vector3 startPosition = transform.position;
+            Vector3 endPosition = waypoint.transform.position;
+            float travelPercent = 0f;
             //Debug.Log(waypoint.name);
-            transform.position = waypoint.transform.position;
-            yield return new WaitForSeconds(waitTime);      //we want delay, yield mean give up control and come back after 1second
+            //transform.position = waypoint.transform.position;
+            //yield return new WaitForSeconds(waitTime);      //we want delay, yield mean give up control and come back after 1second
+
+            while(travelPercent < 1f)
+            {
+                travelPercent += Time.deltaTime;
+                transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
+                //we are going to yield back to the update function until the end of the frame has been completed
+                //and the we will jump back to our coroutine which will continue our while loop and go through our lines
+                yield return new WaitForEndOfFrame();
+            }
+            //then we will go to the next waypoint
         }
     }
 }

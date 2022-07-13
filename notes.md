@@ -72,3 +72,12 @@ for rotating Tile_RoadStraigh create another prefab variant from Tile_RoadStraig
 
 # 117 smooth enemy movement
 delete cylinder enemy
+voxel prefab find ram
+1:55
+- now we would like to move smoothly and face the direction of movement
+- enemymover script
+
+Linear interpolation (LERP) for smooth movement
+Vector3.LERP(startPosition, endPosition, travelPercent)
+3:53
+EnemyMover.cs
