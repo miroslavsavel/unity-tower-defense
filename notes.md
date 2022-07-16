@@ -91,3 +91,19 @@ collider on tile object - tiles folder
 all prefab variants - inherit from base tile object
 add box colider to the root object of Tile
 waypoint script
+
+git checkout "commithash"
+- pozriem sa na historicky commit
+git checkout main
+- zas ma vrati naspat
+https://stackoverflow.com/questions/3601911/how-do-i-undo-a-checkout-in-git
+
+
+# 119 targeting enemies
+Object instantiation in the world  - LOOK for argo assault project
+from waypoint script, because we already tracking clicking tiles, change click to console to 
+
+do serializedfield pridame tower prefab
+what are unity quaternions??????
+
+we!!! can place multiple towers on the same spot
