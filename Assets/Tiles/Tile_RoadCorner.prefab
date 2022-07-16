@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1298341095568313051, guid: f0b90af1119bc1d47956b2648ae620a9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2973192194499599157, guid: f0b90af1119bc1d47956b2648ae620a9, type: 3}
       propertyPath: m_Name
       value: Tile_RoadCorner
@@ -53,6 +57,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2973192194499599158, guid: f0b90af1119bc1d47956b2648ae620a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971043825406311258, guid: f0b90af1119bc1d47956b2648ae620a9, type: 3}
+      propertyPath: isPlaceable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514364407189135087, guid: f0b90af1119bc1d47956b2648ae620a9, type: 3}

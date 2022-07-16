@@ -86,4 +86,8 @@ https://www.youtube.com/watch?v=T4yAcPKyRmo
 
 set the direction by LookAt function
 
-#118
+# 118 mouse input
+collider on tile object - tiles folder
+all prefab variants - inherit from base tile object
+add box colider to the root object of Tile
+waypoint script
