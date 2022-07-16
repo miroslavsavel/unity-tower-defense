@@ -104,6 +104,16 @@ Object instantiation in the world  - LOOK for argo assault project
 from waypoint script, because we already tracking clicking tiles, change click to console to 
 
 do serializedfield pridame tower prefab
+
 what are unity quaternions??????
+unity LookAt()
+unity Object instantiation
 
 we!!! can place multiple towers on the same spot
+
+add new script to tower prefab
+add component to the tower
+
+UnassignedReferenceException
+- I have to add balista to the script
+drag BalistaTopMesh to the weapon
