@@ -105,9 +105,7 @@ from waypoint script, because we already tracking clicking tiles, change click t
 
 do serializedfield pridame tower prefab
 
-what are unity quaternions??????
-unity LookAt()
-unity Object instantiation
+
 
 we!!! can place multiple towers on the same spot
 
@@ -117,3 +115,32 @@ add component to the tower
 UnassignedReferenceException
 - I have to add balista to the script
 drag BalistaTopMesh to the weapon
+
+-----------------------
+what are unity quaternions??????
+unity LookAt()
+unity Object instantiation
+
+https://www.youtube.com/watch?v=d4EgbgTm0Bg
+
+
+
+# 120 damaging enemies
+add particle system to the balista prefab used in argon assault project
+https://learn.unity.com/tutorial/introduction-to-particle-systems#6025fdd9edbc2a112d4f0136
+click na BalistaTopMesh-> right click - effects / particle system
+render mode mesh
+choose balista prefab
+balista doesnt contain appropriate material, so choose material the first palette
+render alignment - velocity
+start speed 30
+start life time 2
+start size 6.25
+
+!!! collision module
+- from planes to world
+- lifetime loss set to 1 - it going to kill particle by 100 percent on collision
+- reduce radius scale 
+dole je tlacidlo visualize bonds to show radius around particle
+
+add collider to the ram - box collider
