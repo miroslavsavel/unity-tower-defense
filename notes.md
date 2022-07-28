@@ -144,3 +144,10 @@ start size 6.25
 dole je tlacidlo visualize bonds to show radius around particle
 
 add collider to the ram - box collider
+
+
+create new script EnemyHealth
+
+OnParticleCollision(GameObject other)
+
+To register collision -> check send collision message in particle system
