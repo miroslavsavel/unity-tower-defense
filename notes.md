@@ -151,3 +151,12 @@ create new script EnemyHealth
 OnParticleCollision(GameObject other)
 
 To register collision -> check send collision message in particle system
+
+
+# 121 Debuging tools
+
+waypoint.cs - set property for isPlaceable
+coordinateLaberer.cs - see property in action
+
+
+# 122 findign path
