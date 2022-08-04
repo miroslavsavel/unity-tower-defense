@@ -10,11 +10,39 @@ public class EnemyMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindPath();
+        ReturnToStart();
         //Debug.Log("Start here");
         StartCoroutine(FollowPath());        //similar to invoke repeating
         //InvokeRepeating("PrintWaypointName", 0, 1f);
         //Debug.Log("Finishing start");
     }
+
+    /*
+     * Find all objects with tag "path" in the game and put them into the list of waypoints
+     */
+    void FindPath()
+    {
+        //When we find the path we have to clear the previous path, because path can be longer and longer
+        path.Clear();
+
+        //this isn't good approach because we cant guarantee they are in specific order!!!
+        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("Path");
+        //list is slighty different from array https://www.c-sharpcorner.com/article/difference-between-array-and-arraylist-in-c-sharp/
+        foreach (GameObject waypoint in waypoints)
+        {
+            path.Add(waypoint.GetComponent<Waypoint>());    //add every object from waypoints into the path LIST
+        }
+    }
+
+    /*
+     *Move enemy to the first waypoint
+     **/
+    void ReturnToStart()
+    {
+        transform.position = path[0].transform.position;
+    }
+
 
     IEnumerator FollowPath()
     {   
@@ -43,5 +71,7 @@ public class EnemyMover : MonoBehaviour
             }
             //then we will go to the next waypoint
         }
+        //after enemy reach the end we destroy the game object with negative consequences for player
+        Destroy(gameObject);
     }
 }

@@ -160,3 +160,12 @@ coordinateLaberer.cs - see property in action
 
 
 # 122 findign path
+turn attention to the enemy
+change manual path to 
+Delete ram from the scene
+
+create new tag Path
+add tag to the tile that are path of "path"
+enemyMover.cs
+- method for findign the path
+- method for placing enemy at the first waypoint in the path
