@@ -169,3 +169,31 @@ add tag to the tile that are path of "path"
 enemyMover.cs
 - method for findign the path
 - method for placing enemy at the first waypoint in the path
+
+
+
+# 123 instantiating enemies
+Object pool
+Use coroutine for spawn object 
+???coroutines in C#
+
+# ------------------
+coroutines
+https://gamedevbeginner.com/coroutines-in-unity-when-and-how-to-use-them/
+https://medium.com/@kunaltandon.kt/coroutines-in-unity-6e8a12279364
+- cooperative functions
+- functions that can pass the execution between them
+coroutines are functions that can be suspended, resumed and executed cooperatively (often on the same thread)
+
+krossing 
+https://www.youtube.com/watch?v=CU1GHT9tHqQ
+asynchronous coroutines with c#
+https://www.youtube.com/watch?v=pE6b2Bs3U9Q
+
+yield
+https://www.youtube.com/watch?v=bsZjfuTrPSA
+
+BEST EXPLAINED
+https://www.youtube.com/watch?v=HRXkeaeImGs&t=798s
+lazy iteration through collection
+what is iterator?? - check corey schaffer and iterator in C#
