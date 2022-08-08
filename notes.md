@@ -197,3 +197,15 @@ BEST EXPLAINED
 https://www.youtube.com/watch?v=HRXkeaeImGs&t=798s
 lazy iteration through collection
 what is iterator?? - check corey schaffer and iterator in C#
+
+instantiante enemy prefab every second
+
+
+
+# 124 Object pool
+object creatiion is resourse intensive
+
+- code foreach loop from scratch
+- code dictionary from scratch in C
+
+save fixed number in the object pool, then set them active if we need to draw them
