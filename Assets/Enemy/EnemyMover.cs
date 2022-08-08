@@ -8,7 +8,7 @@ public class EnemyMover : MonoBehaviour
     //public GameObject Enemy; //dont need to import it, because this script is attached to the enemy object
     [SerializeField] [Range(0f, 5f)] float speed = 1f;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         FindPath();
         ReturnToStart();
@@ -72,6 +72,9 @@ public class EnemyMover : MonoBehaviour
             //then we will go to the next waypoint
         }
         //after enemy reach the end we destroy the game object with negative consequences for player
-        Destroy(gameObject);
+        //Destroy(gameObject);
+
+        //instead destroying object we disable it in hierarchy and let it in the object pool
+        gameObject.SetActive(false);
     }
 }

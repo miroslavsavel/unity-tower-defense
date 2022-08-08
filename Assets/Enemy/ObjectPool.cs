@@ -31,13 +31,33 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    
+    void EnableObjectInPool()
+    {
+       /* foreach (GameObject objectInPool in pool)
+        {
+            if(objectInPool.activeInHierarchy == false)
+            {
+                objectInPool.SetActive(true);
+                return true;
+            }
+        }*/
+
+        for(int i =0; i < pool.Length; i++)
+        {
+            if(pool[i].activeInHierarchy == false)
+            {
+                pool[i].SetActive(true);
+                return;
+            }
+        }
+    }
 
     IEnumerator SpawnEnemy()
     {
         while (true)
         {
             //Instantiate(enemyPrefab, transform);
+            EnableObjectInPool();
             yield return new WaitForSeconds(spawnTimer);
         }
     }
