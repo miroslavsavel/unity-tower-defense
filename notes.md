@@ -209,3 +209,9 @@ object creatiion is resourse intensive
 - code dictionary from scratch in C
 
 save fixed number in the object pool, then set them active if we need to draw them
+
+
+# 125 target closest enemy 
+problem is targetlocator.cs
+new script enemy.cs for now blank
+change  targetlocator.cs
